@@ -4,8 +4,9 @@ Ninguna de estas cuentas genera costos si se mantienen en los planes gratuitos i
 
 ## 1. GitHub (ahora)
 
-- Repositorio: `ecbrandsolutions-tech/brand-solutions-futurista`.
-- **Renombrar:** GitHub → repositorio → *Settings* → *General* → *Repository name*. Los nombres de GitHub no admiten espacios; usa guiones (por ejemplo `marketing-cloud-ai`). GitHub redirige automáticamente la URL antigua.
+- Repositorio actual: `ecbrandsolutions-tech/brand-solutions-futurista`.
+- Nombre elegido: **`marketing-cloud-ai`**.
+- **Renombrar:** GitHub → repositorio → *Settings* → *General* → *Repository name* → `marketing-cloud-ai` → *Rename*. GitHub redirige automáticamente la URL antigua.
 - Si en algún momento Claude no puede subir ramas, reconecta GitHub o instala la Claude GitHub App desde https://claude.ai/connect-github.
 
 ## 2. Supabase (Fase 3)
