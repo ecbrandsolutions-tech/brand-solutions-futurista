@@ -2,7 +2,7 @@
 
 Centro de control de publicidad digital en la nube para **Facebook Ads e Instagram Ads**: conectar cuentas publicitarias, ver estadísticas reales, filtrar, crear campañas y administrarlas desde una sola interfaz.
 
-> Estado: **Fase 1 — Arquitectura** (esqueleto del proyecto). Ver [docs/ROADMAP.md](docs/ROADMAP.md).
+> Estado: **Fase 2 — Frontend y dashboard** terminada. Ver [docs/ROADMAP.md](docs/ROADMAP.md).
 
 ## Stack
 

@@ -5,7 +5,7 @@ Cada fase se entrega en su propia rama. Nada se fusiona a `main` sin aprobación
 | Fase | Entregable | Rama | Estado |
 |---|---|---|---|
 | 1 | Análisis, arquitectura, esqueleto Next.js, `.env.example`, CI, documentación | `fase-1-arquitectura` | Terminada |
-| 2 | Layout con menú lateral (10 secciones), dashboard con estados vacíos reales, responsive | `fase-2-frontend` | Pendiente |
+| 2 | Layout con menú lateral (10 secciones), dashboard con estados vacíos reales, responsive | `fase-2-frontend` | Terminada |
 | 3 | Migraciones Supabase, RLS, login, roles, rutas protegidas | `fase-3-supabase-auth` | Pendiente |
 | 4 | OAuth de Meta, token cifrado, listado de cuentas publicitarias | `fase-4-meta-oauth` | Pendiente |
 | 5 | Sincronización de campañas, conjuntos, anuncios e insights; dashboard con datos reales | `fase-5-meta-api` | Pendiente |
@@ -24,6 +24,17 @@ Cada fase se entrega en su propia rama. Nada se fusiona a `main` sin aprobación
 - Pruebas unitarias con Vitest (6 pruebas).
 - CI de GitHub Actions: lint, typecheck, pruebas y build.
 - `.env.example` sin valores secretos.
+
+## Fase 2: realizado
+
+- Área de la aplicación (`src/app/(app)/`) con menú lateral de 10 secciones; en móvil, menú desplegable con botón, cierre con Escape y al navegar.
+- `/` redirige a `/dashboard`.
+- Dashboard con las 12 métricas (inversión, impresiones, alcance, frecuencia, clics, CTR, CPC, CPM, leads, conversiones, CPA, ROAS) y los tres bloques de gráficos (por fecha, por campaña, por cuenta). Sin conexión a Meta muestran "—" y "Sin datos"; no hay datos de demostración.
+- Aviso de estado de Meta calculado en el servidor en cada solicitud.
+- `src/lib/metrics.ts`: definición de métricas y cálculo de derivadas a partir de totales (no se promedian ratios; división por cero → sin valor). Se usará en la Fase 5 con datos reales.
+- Páginas de las 9 secciones restantes con estado vacío e indicación de la fase en la que se activan.
+- Configuración: estado real de Supabase, Meta e IA.
+- Pruebas: 18 unitarias. Verificación en navegador: las 10 rutas responden 200, el enlace activo es correcto, sin errores de consola, sin scroll horizontal en móvil (iPhone 13).
 
 ### Avisos conocidos
 
